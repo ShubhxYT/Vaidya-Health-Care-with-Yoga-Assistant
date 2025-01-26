@@ -11,3 +11,4 @@ Adho-Mukha-Svanasana.mp4
 /Models
 *.pth
 *.pyc
+secrets.toml
