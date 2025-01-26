@@ -4,9 +4,9 @@
 This repository contains a comprehensive healthcare management system that includes various applications for yoga pose tracking, disease prediction, mental health analysis, and more. The system leverages machine learning models, computer vision, and natural language processing to provide real-time feedback and insights.
 
 ## Features
-- **Yoga Assistant**: Real-time yoga pose detection and feedback using YOLO and gradient regressor models.
+- **Yoga Assistant**: Real-time yoga pose detection and feedback using YOLO and gradient regressor models for pose adjustments.
 - **Disease Prediction**: Predicts diseases based on symptoms using machine learning models.
-- **Mental Health Analysis**: Analyzes emotional patterns and provides mental health insights.
+- **Mental Health Analysis**: Analyzes emotional patterns and provides mental health insights using Hume AI.
 - **Appointment Management**: Schedule and manage appointments.
 - **Medical Records**: Secure storage and access to medical records.
 - **Health Tracking**: Monitor vital signs and medications.
@@ -16,8 +16,8 @@ This repository contains a comprehensive healthcare management system that inclu
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/healthcare-management-system.git
-    cd healthcare-management-system
+    git clone https://github.com/ShubhxYT/Vaidya-Health-Care-with-Yoga-Assistant
+    cd Vaidya-Health-Care-with-Yoga-Assistant
     ```
 
 2. Install the required dependencies:
@@ -37,3 +37,4 @@ This repository contains a comprehensive healthcare management system that inclu
 Run the main application:
 ```sh
 streamlit run app.py
+```
