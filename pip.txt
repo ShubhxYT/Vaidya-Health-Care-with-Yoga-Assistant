@@ -1,1 +1,0 @@
-pip install mediapipe opencv-python tensorflow scikit-learn joblib ultralytics cvzone numpy joblib scikit-learn
