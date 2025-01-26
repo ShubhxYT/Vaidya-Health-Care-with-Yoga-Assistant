@@ -1,0 +1,11 @@
+/.venv
+/streamlit
+.env
+Adho-Mukha-Svanasana.mp4
+
+*.log
+*.env
+*.pkl
+*.h5
+*.pt
+/Models
