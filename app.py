@@ -3,16 +3,15 @@ from streamlit_option_menu import option_menu
 
 import appointment, hosloc, models, recommendation, userprofile, home, login , coach, read_reports, mhfinal, yoga_assistant_st
 
-print("App is running")
 # Initialize session state variables
 if "email" not in st.session_state:
     st.session_state.email = None
 
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False  # User is not logged in by default
-print("App is running222")
+# print("App is running222")
 st.set_page_config(page_title="Healthcare Chatbot", page_icon=":hospital:")
-print("App is running33333")
+# print("App is running33333")
 class MultiApp:
     def __init__(self):
         self.apps = []
