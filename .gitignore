@@ -8,7 +8,11 @@ Adho-Mukha-Svanasana.mp4
 *.pkl
 *.h5
 *.pt
-/Models
 *.pth
 *.pyc
+*.task
+
 secrets.toml
+yoga_assistant-gpt.py
+/yoga-posture-dataset
+/Yoga.Posture.yolov8

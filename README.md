@@ -24,14 +24,16 @@ This repository contains a comprehensive healthcare management system that inclu
     ```sh
     pip install -r requirements.txt
     ```
+Additionally, confirm that your nvidia card's cuda is installed and configured (AMD is not supported) and that your microphone is set up for Lumia AI.
 
 3. Download the necessary models and place them in the `Models` directory:
     - `Gradient_Regressor_model.pkl`
-    - `yolo-yoga.pt`
+    - `yolov8m.pt`
 
-4. Ensure the following files are in the root directory:
-    - [ds_angles.npy](http://_vscodecontentref_/1)
-    - [ds_adjustments.npy](http://_vscodecontentref_/2)
+4. Ensure the following files are in the root directory for training models:
+    - [Yoga.Posture.yolov8](https://universe.roboflow.com/yogaposture/yoga-posture-2/dataset/1)
+    - [yoga-posture-dataset](https://www.kaggle.com/datasets/tr1gg3rtrash/yoga-posture-dataset/data)
+    - [pose_landmarker_heavy/lite](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker)
 
 ## Usage
 Run the main application:
