@@ -13,8 +13,8 @@ from sklearn.model_selection import train_test_split
 
 from all_func import *
 
-ds_angles = np.load('ds_angles.npy')
-ds_adjustments = np.load('ds_adjustments.npy')
+ds_angles = np.load('data/ds_angles.npy')
+ds_adjustments = np.load('data/ds_adjustments.npy')
 
 pp.pprint(ds_angles)
 print("==========================")

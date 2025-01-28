@@ -15,7 +15,7 @@ from hume.core.api_error import ApiError
 from hume import MicrophoneInterface, Stream
 
 class StreamlitWebSocketHandler:
-    def __init__(self, csv_filename='emotion_analysis.csv'):
+    def __init__(self, csv_filename='data/emotion_analysis.csv'):
         self.messages_queue = queue.Queue()
         self.emotions_queue = queue.Queue()
         self.socket = None

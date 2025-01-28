@@ -100,7 +100,7 @@ def get_mental_health_analysis(df):
 def main():
     st.title("Emotional Wellness Analysis")
     
-    file_path = 'emotion_analysis.csv'
+    file_path = 'data/emotion_analysis.csv'
     
     try:
         df = load_emotion_data(file_path)

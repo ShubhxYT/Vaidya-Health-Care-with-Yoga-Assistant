@@ -55,8 +55,8 @@ for i in range(33):
 ptime = 0
 
 img_canvas = np.zeros((hCam,wCam),np.uint8)
-ds_angles = np.load('ds_angles.npy')
-ds_adjustments = np.load('ds_adjustments.npy')
+ds_angles = np.load('data/ds_angles.npy')
+ds_adjustments = np.load('data/ds_adjustments.npy')
 
 train_angles, test_angles, train_adjustments, test_adjustments = train_test_split(ds_angles, ds_adjustments, test_size=0.2, random_state=42)
 model = joblib.load("Models/Gradient_Regressor_model.pkl")

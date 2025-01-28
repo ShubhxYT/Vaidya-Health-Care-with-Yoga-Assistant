@@ -36,10 +36,10 @@ from ultralytics import YOLO
 def training_ppt():
 
     # Initialize the model
-    model = YOLO("yolov8m.pt")  # You can choose different model architectures like yolov8n.yaml, yolov8m.yaml, etc.
+    model = YOLO("Models/yolov8m.pt")  # You can choose different model architectures like yolov8n.yaml, yolov8m.yaml, etc.
 
     # Train the model
-    model.train(data='D:/Codes/Hackathon/Yoga.Posture.yolov8/data.yaml', epochs=100, imgsz=640)
+    model.train(data='Yoga.Posture.yolov8/data.yaml', epochs=100, imgsz=640)
     
 if __name__ == '__main__':
     training_ppt()

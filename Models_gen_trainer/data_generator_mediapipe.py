@@ -61,5 +61,5 @@ ds_angles = np.array(ds_angles)
 ds_adjustments = np.array(ds_adjustments)
 
 # Save the arrays to .npy files
-np.save('ds_angles.npy', ds_angles)
-np.save('ds_adjustments.npy', ds_adjustments)
+np.save('data/ds_angles.npy', ds_angles)
+np.save('data/ds_adjustments.npy', ds_adjustments)
