@@ -49,15 +49,11 @@ def video_stream(x):
     try:
         
         # wCam, hCam = 1280, 720
-        if x == 0:
+        if x == "cam":
             cap = cv2.VideoCapture(0)
-        elif x == 1:
-            cap = cv2.VideoCapture("videoplayback.mp4")
-        # else:
-        #     cap = cv2.VideoCapture("videoplayback.mp4")
-        # cap = cv2.VideoCapture(0)
-        # cap.set(3, wCam)
-        # cap.set(4, hCam)
+        elif x == "test":
+            cap = cv2.VideoCapture("videoplayback.mp4") #any sample yoga video
+            
         if not cap.isOpened():
             st.error("Cannot access webcam. Please check your camera connection.")
             return
@@ -75,11 +71,6 @@ def video_stream(x):
             formated_out_old.landmark.append(landmark)
         ptime = 0
 
-        # img_canvas = np.zeros((hCam,wCam),np.uint8)
-        # ds_angles = np.load('ds_angles.npy')
-        # ds_adjustments = np.load('ds_adjustments.npy')
-
-        # train_angles, test_angles, train_adjustments, test_adjustments = train_test_split(ds_angles, ds_adjustments, test_size=0.2, random_state=42)
         model = joblib.load("Models/Gradient_Regressor_model.pkl")
         # model = joblib.load("Models/neural_network_model_2000.pkl")
         yolo_model = YOLO('Models/yolo-yoga.pt')
@@ -242,11 +233,9 @@ def app():
     
     # Start button
     if st.button('Start', key='start_video'):
-        video_stream(0)
-    # if st.button('Test Assistant'):
-    #     video_stream(0)
+        video_stream("cam")
     if st.button('Test Assistant'):
-        video_stream(1)
+        video_stream("test")
 
 if __name__ == "__main__":
     app()
