@@ -1,5 +1,6 @@
 import os
-
+# import sys
+# sys.path.append('all_func')
 from all_func import *
 
 
@@ -49,7 +50,6 @@ for folder in  os.listdir(dataset_path):
                 score = calculate_percentage(adjustments)
                 ds_scores.append(score)
                 
-    
 
 ds_angles = np.array(ds_angles)
 ds_adjustments = np.array(ds_adjustments)
