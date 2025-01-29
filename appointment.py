@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Google Calendar API Setup
-SERVICE_ACCOUNT_FILE = "bits-pilani-postman-1d612ad20031.json"
+SERVICE_ACCOUNT_FILE = "postman-1d612ad20031.json"
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 JITSI_BASE_URL = "https://meet.jit.si"
 

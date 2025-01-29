@@ -2,6 +2,7 @@
 /streamlit
 .env
 Adho-Mukha-Svanasana.mp4
+videoplayback.mp4
 
 *.log
 *.env
@@ -16,4 +17,7 @@ secrets.toml
 yoga_assistant-gpt.py
 /yoga-posture-dataset
 /Yoga.Posture.yolov8
-videoplayback.mp4
+/__pycache__
+/__pycache__
+/__pycache__
+/__pycache__
